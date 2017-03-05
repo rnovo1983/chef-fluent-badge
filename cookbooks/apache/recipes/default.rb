@@ -15,6 +15,7 @@ package 'httpserver' do
      action :install
 end
 
-service 'apache2' do
+service 'apache_service' do
+     service_name package
     action [:start, :enable]
 end
